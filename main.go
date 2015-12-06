@@ -206,7 +206,7 @@ func init() {
 
 	if len(urls) <= 0 {
 		fmt.Fprintf(os.Stderr, "Need to specify 1 -url option at least.")
-		os.Exit(1)
+		os.Exit(255)
 	}
 }
 
