@@ -211,12 +211,6 @@ func init() {
 }
 
 func main() {
-	fmt.Println("This is rssconv!")
-	fmt.Printf("%v\n", urls)
-	fmt.Printf("%v\n", sword)
-	fmt.Printf("%v\n", rword)
-	fmt.Printf("%v\n", outfile)
-
 	var cnvurls []string = urls
 	var rssdoc *RSSDocument = NewRSSDocument(&cnvurls, sword, rword, outfile)
 	rssdoc.LoadRSS()
@@ -224,5 +218,4 @@ func main() {
 	rssdoc.PrintRSS()
 
 	os.Exit(exitCode)
-
 }
